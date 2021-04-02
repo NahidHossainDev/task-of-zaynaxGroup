@@ -1,0 +1,121 @@
+
+$lightGray:#c3b7c6;
+$borderColor:#e4e4e4;
+$green:#00b55b;
+$lightGreen:#1acf9a;
+
+*{
+    font-size: 16px;
+}
+.container{
+    max-width:1300px;
+}
+strong{
+    font-weight: 500;
+}
+.lightGray{
+    color:$lightGray;
+}
+.header-2{
+    border-top: 1px solid $borderColor;
+    border-bottom: 1px solid $borderColor;
+}
+.dropdown{
+    display:inline-block;
+    button{
+        background-color: white;
+        border:none;
+        border-left: 1px solid black;
+        border-radius: 0;
+        margin-left: 20px;
+        color:black;
+        padding: 0 20px;
+        &:hover{
+            background-color: white;
+            color:black;
+        }
+    }
+}
+.active{
+    .dropdown-toggle{
+        background-color: white;
+        color:black;
+    }
+}
+.dropdown-toggle::after{
+    margin-left: 20px;
+}
+.input-box{
+    background-color: #fafafa;
+    border: 1px solid $borderColor;
+    border-radius: 7px;
+    padding:5px 10px;
+    margin-left: auto;
+    input{
+        border:none;
+        color:#b5b5b5;
+        background-color: #fafafa;
+        outline: none;
+        width:250px;
+    }
+    img{
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+.filter-menu{
+    border: 1px solid $borderColor;
+    border-radius: 10px;
+    padding: 10px 0;
+}
+.MuiChip-root{
+    color:#b5b5b5 !important;
+    background-color: #fafafa !important;
+    border: 1px solid $borderColor !important;
+    .MuiChip-label{
+        font-size: 14px !important;
+    }   
+    svg{
+        path{
+            color:#b5b5b5 !important;
+        }
+    } 
+}
+.Clear{
+    color:$lightGreen !important;
+    background-color: #e5fff2 !important;
+    border: 1px solid $lightGreen !important;
+}
+.accordion{
+    box-shadow: none !important;
+    margin: 0 !important;
+    .MuiAccordionSummary-root{
+        border-top: 1px dashed;
+    }
+    .MuiAccordionDetails-root {
+        display: inline-block !important;
+        padding: 0 16px 16px !important;
+    }
+    .Mui-expanded{
+        min-height: 0;
+    }
+    .more{
+        color:$lightGreen;
+    }
+    .Brand{
+        .input-box{
+            border-radius: 0px;
+            padding:2px 7px;
+            margin-bottom: 10px;
+            input{
+                width:220px
+            }
+        }
+    }
+    .Color,
+    .Price,
+    .Size{
+        display: flex !important;
+    }
+}
